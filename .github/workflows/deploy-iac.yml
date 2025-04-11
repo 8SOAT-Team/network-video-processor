@@ -8,7 +8,7 @@ on:
         required: true
         type: choice
         options:
-          - serverless
+          - network
       action:
         description: "Escolha a ação (apply ou destroy)"
         required: true

@@ -30,8 +30,3 @@ output "aws_internet_gateway_id" {
   description = "ID do Internet Gateway"
   value       = aws_internet_gateway.gw.id
 }
-
-output "aes_sqs_queue_url" {
-  description = "URL da fila SQS"
-  value       = aws_sqs_queue.terraform_queue.id
-}

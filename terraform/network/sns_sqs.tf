@@ -4,8 +4,6 @@ resource "aws_sns_topic" "processor_topic" {
 
 resource "aws_sqs_queue" "processor_queue" {
   name                        = "processor-queue.fifo"
-  fifo_queue                  = true
-  content_based_deduplication = true
 }
 
 resource "aws_sns_topic_subscription" "processor_subscription" {
